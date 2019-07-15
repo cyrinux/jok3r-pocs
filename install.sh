@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get update
-sudo apt-get install -y tcpdump
+
+sudo pacman -Syyu --noconfirm tcpdump
+sudo pacman -Syyu --noconfirm python-colored python-prettytable python-regex python-colorlog python-requests python-argparse
 sudo pip3 install -r requirements.txt
